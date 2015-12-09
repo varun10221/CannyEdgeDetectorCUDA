@@ -1,0 +1,27 @@
+﻿Build started 11/13/2015 2:55:27 AM.
+     1>Project "c:\Users\varun10221\documents\visual studio 2012\Projects\MPP\MPP\MPP.vcxproj" on node 2 (Build target(s)).
+     1>AddCudaCompileDeps:
+         D:\visual_studio_for_cuda\VC\bin\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /D_DEBUG /D_CONSOLE /D_MBCS /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /I. /FIcuda_runtime.h /c "c:\Users\varun10221\documents\visual studio 2012\Projects\MPP\MPP\kernel.cu" 
+       CudaBuild:
+         Compiling CUDA source file kernel.cu...
+         cmd.exe /C "C:\Users\varun10221\AppData\Local\Temp\tmp92c7f88b43db4254ba7ca85f13c7d48a.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2012 -ccbin "D:\visual_studio_for_cuda\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd " -o Debug\kernel.cu.obj "c:\Users\varun10221\documents\visual studio 2012\Projects\MPP\MPP\kernel.cu"
+         
+         c:\Users\varun10221\documents\visual studio 2012\Projects\MPP\MPP>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2012 -ccbin "D:\visual_studio_for_cuda\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd " -o Debug\kernel.cu.obj "c:\Users\varun10221\documents\visual studio 2012\Projects\MPP\MPP\kernel.cu" 
+         kernel.cu
+       Link:
+         D:\visual_studio_for_cuda\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"c:\Users\varun10221\documents\visual studio 2012\Projects\MPP\Debug\MPP.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\lib\Win32" cudart.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"c:\Users\varun10221\documents\visual studio 2012\Projects\MPP\Debug\MPP.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"c:\Users\varun10221\documents\visual studio 2012\Projects\MPP\Debug\MPP.lib" /MACHINE:X86 Debug\kernel.cu.obj
+         MPP.vcxproj -> c:\Users\varun10221\documents\visual studio 2012\Projects\MPP\Debug\MPP.exe
+       PostBuildEvent:
+         echo copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart*.dll" "c:\Users\varun10221\documents\visual studio 2012\Projects\MPP\Debug\"
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart*.dll" "c:\Users\varun10221\documents\visual studio 2012\Projects\MPP\Debug\"
+         :VCEnd
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart*.dll" "c:\Users\varun10221\documents\visual studio 2012\Projects\MPP\Debug\"
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart32_75.dll
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart64_75.dll
+                 2 file(s) copied.
+     1>Done Building Project "c:\Users\varun10221\documents\visual studio 2012\Projects\MPP\MPP\MPP.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:21.56

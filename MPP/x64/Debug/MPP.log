@@ -1,0 +1,30 @@
+﻿Build started 12/8/2015 6:38:08 PM.
+     1>Project "E:\MPP_DUPLICATE\MPP\MPP.vcxproj" on node 2 (Build target(s)).
+     1>AddCudaCompileDeps:
+         D:\visual_studio_for_cuda\VC\bin\x86_amd64\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /DWIN64 /D_DEBUG /D_CONSOLE /D_MBCS /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /ID:\OPENCV\opencv\build\include\opencv /ID:\OPENCV\opencv\build\include /ID:\OPENCV\opencv\build\include\opencv2 /ID:\OPENCV\opencv\build\include /ID:\OPENCV\opencv\build\include\opencv2 /ID:\OPENCV\opencv\build\include\opencv /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /I. /FIcuda_runtime.h /c E:\MPP_DUPLICATE\MPP\source.cu 
+       CudaBuild:
+         Compiling CUDA source file source.cu...
+         cmd.exe /C "C:\Users\varun10221\AppData\Local\Temp\tmp284bd9d00b214aaa99eb939a0d5fc74c.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2012 -ccbin "D:\visual_studio_for_cuda\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -ID:\OPENCV\opencv\build\include\opencv -ID:\OPENCV\opencv\build\include -ID:\OPENCV\opencv\build\include\opencv2 -ID:\OPENCV\opencv\build\include -ID:\OPENCV\opencv\build\include\opencv2 -ID:\OPENCV\opencv\build\include\opencv -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd " -o x64\Debug\source.cu.obj "E:\MPP_DUPLICATE\MPP\source.cu"
+         
+         E:\MPP_DUPLICATE\MPP>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2012 -ccbin "D:\visual_studio_for_cuda\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -ID:\OPENCV\opencv\build\include\opencv -ID:\OPENCV\opencv\build\include -ID:\OPENCV\opencv\build\include\opencv2 -ID:\OPENCV\opencv\build\include -ID:\OPENCV\opencv\build\include\opencv2 -ID:\OPENCV\opencv\build\include\opencv -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd " -o x64\Debug\source.cu.obj "E:\MPP_DUPLICATE\MPP\source.cu" 
+     1>D:\OPENCV\opencv\build\include\opencv2/core/base.hpp(342): warning : function declared with "noreturn" does return
+     1>D:\OPENCV\opencv\build\include\opencv2/core/base.hpp(342): warning : function declared with "noreturn" does return
+         source.cu
+       Link:
+         D:\visual_studio_for_cuda\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"E:\MPP_DUPLICATE\x64\Debug\MPP_CU_TEST.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\lib\x64" /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\lib" /LIBPATH:C:\Users\varun10221\Desktop\MultiProcessorProject\OpenCVProject /LIBPATH:D:\OPENCV\opencv\build\x64\vc11\lib /LIBPATH:D:\OPENCV\opencv\build\x64\vc12\lib /LIBPATH:D:\OPENCV\opencv\build\x86\vc11\lib /LIBPATH:D:\OPENCV\opencv\build\x86\vc12\lib /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\lib\x64" cudart.lib kernel32.lib user32.lib gdi32.lib winspool.lib opencv_ts300.lib opencv_world300.lib opencv_ts300d.lib opencv_world300d.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\MPP_DUPLICATE\x64\Debug\MPP_CU_TEST.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\MPP_DUPLICATE\x64\Debug\MPP_CU_TEST.lib" /MACHINE:X64 x64\Debug\imageprocessor.cu.obj
+         x64\Debug\source.cu.obj
+         MPP.vcxproj -> E:\MPP_DUPLICATE\x64\Debug\MPP_CU_TEST.exe
+       PostBuildEvent:
+         echo copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart*.dll" "E:\MPP_DUPLICATE\x64\Debug\"
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart*.dll" "E:\MPP_DUPLICATE\x64\Debug\"
+         :VCEnd
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart*.dll" "E:\MPP_DUPLICATE\x64\Debug\"
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart32_75.dll
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart64_75.dll
+                 2 file(s) copied.
+     1>Done Building Project "E:\MPP_DUPLICATE\MPP\MPP.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:24.95
